@@ -148,7 +148,7 @@ interface IKwikswapV1Pair {
         uint amount1In,
         uint amount0Out,
         uint amount1Out,
-        address indexed to
+        
     );
     event Sync(uint112 reserve0, uint112 reserve1);
 
@@ -157,8 +157,7 @@ interface IKwikswapV1Pair {
     function token0() external view returns (address);
     function token1() external view returns (address);
     function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast);
-    function price0CumulativeLast() external view returns (uint);
-    function price1CumulativeLast() external view returns (uint);
+    
     function kLast() external view returns (uint);
 
     function mint(address to) external returns (uint liquidity);
