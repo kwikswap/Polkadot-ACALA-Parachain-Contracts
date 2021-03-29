@@ -54,8 +54,7 @@ library TransferHelper {
         require(success && (data.length == 0 || abi.decode(data, (bool))), 'TransferHelper: APPROVE_FAILED');
     }
 
-    function safeTransfer(address token, address to, uint value) internal {
-        // bytes4(keccak256(bytes('transfer(address,uint256)')))        
+    function safeTransfer(address token, address to, uint value) internal {        
         require(success && (data.length == 0 || abi.decode(data, (bool))), 'TransferHelper: TRANSFER_FAILED');
     }
 
